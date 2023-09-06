@@ -9,13 +9,13 @@ a {
   }
   
   a:visited {
-    color: black;
+    color: white;
   }
   
   a:hover {
-    color: green;
+    color: #003200;
   }
   
   a:active {
-    color: white;
+    color: pink;
   }
