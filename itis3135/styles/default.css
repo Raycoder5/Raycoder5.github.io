@@ -1,3 +1,21 @@
 body {
     background-color: #df241b;
 }
+
+/* Link color controls below */
+
+a {
+    color: black;
+  }
+  
+  a:visited {
+    color: black;
+  }
+  
+  a:hover {
+    color: green;
+  }
+  
+  a:active {
+    color: white;
+  }
