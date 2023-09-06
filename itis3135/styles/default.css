@@ -2,6 +2,13 @@ body {
     background-color: #df241b;
 }
 
+/* Heading color and font type below */
+
+h1, h2 {
+    font-family: Impact, serif;
+    color: #1ed4e1;
+  }
+
 /* Link color controls below */
 
 a {
