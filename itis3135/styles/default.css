@@ -4,7 +4,7 @@ body {
 
 /* Heading color and font type below */
 
-h1, h2 {
+h1, h2, p {
     font-family: 'Courier New', Courier, monospace;
     color: whitesmoke;
     text-align: center;
