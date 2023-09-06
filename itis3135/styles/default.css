@@ -7,9 +7,14 @@ body {
 h1, h2 {
     font-family: 'Courier New', Courier, monospace;
     color: whitesmoke;
+    text-align: center;
   }
 
 /* Link color controls below */
+
+a, nav {
+    text-align: center;
+}
 
 a {
     color: black;
