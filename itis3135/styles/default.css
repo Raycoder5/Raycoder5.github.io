@@ -1,5 +1,6 @@
 body {
     background-image: url(https://images-assets.nasa.gov/image/iss040e083604/iss040e083604~medium.jpg);
+    padding: 20px;
 }
 
 body, figure {
