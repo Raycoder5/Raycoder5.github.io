@@ -10,6 +10,13 @@ body, main, figure {
   flex-wrap: wrap;
 }
 
+.gallery img {
+  width: 50%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+}
+
 
 /* Heading color and font type below */
 
