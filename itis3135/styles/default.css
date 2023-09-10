@@ -1,5 +1,5 @@
 body {
-    background-color: #4c8bf5;
+    background-image: url(https://images-assets.nasa.gov/image/iss040e083604/iss040e083604~medium.jpg);
 }
 
 body, figure {
@@ -12,8 +12,12 @@ body, figure {
 
 main p {
   text-align: left;
-  color: black;
+  color: violet;
   font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+  color: violet;
 }
 
 /* Intro page image styling */
@@ -50,7 +54,7 @@ a, nav {
 }
 
 a {
-    color: black;
+    color: violet;
     text-decoration: none;
 }
   
@@ -60,9 +64,9 @@ a {
 }
   
   a:hover {
-    color: #003200;
+    color: #22c122;
 }
   
   a:active {
-    color: pink;
+    color: blue;
 }
