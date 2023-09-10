@@ -8,6 +8,12 @@ body, main, figure {
   align-items: center;
 }
 
+main p {
+  text-align: left;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .gallery img {
   width: 100%;
   max-width: 1000px;
