@@ -10,8 +10,7 @@ body, main, figure {
 }
 
 .figure img {
-  max-width: fit-content;
-  max-height: fit-content;
+  max-width: 350px;
 }
 
 /* Heading color and font type below */
