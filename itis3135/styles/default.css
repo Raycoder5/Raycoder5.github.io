@@ -2,7 +2,7 @@ body {
     background-color: #4c8bf5;
 }
 
-body, main, figure {
+body, figure {
   display: flex;
   flex-direction: column;
   align-items: center;
