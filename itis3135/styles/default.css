@@ -9,8 +9,9 @@ body, main, figure {
   max-width: 90%;
 }
 
-.figure img {
-  width: 50%;
+.gallery {
+  width: 90%;
+  height: 300px;
 }
 
 /* Heading color and font type below */
