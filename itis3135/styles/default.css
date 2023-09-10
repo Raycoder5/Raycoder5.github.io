@@ -9,6 +9,11 @@ body, main, figure {
   max-width: 90%;
 }
 
+.figure img {
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
 /* Heading color and font type below */
 
 h1, h2, p {
