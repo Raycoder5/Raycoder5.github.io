@@ -2,6 +2,12 @@ body {
     background-color: #df241b;
 }
 
+body, main, figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Heading color and font type below */
 
 h1, h2, p {
