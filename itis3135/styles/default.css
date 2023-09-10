@@ -10,7 +10,7 @@ body, main, figure {
 }
 
 .figure img {
-  max-width: 350px;
+  width: 50%;
 }
 
 /* Heading color and font type below */
