@@ -8,11 +8,15 @@ body, figure {
   align-items: center;
 }
 
+/* Contract page text styling */
+
 main p {
   text-align: left;
   color: black;
   font-family: 'Times New Roman', Times, serif;
 }
+
+/* Intro page image styling */
 
 .gallery img {
   width: 100%;
