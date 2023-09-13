@@ -13,12 +13,12 @@ body, figure {
 
 main p {
   text-align: left;
-  color: #A50104;
+  color: violet;
   font-family: 'Times New Roman', Times, serif;
 }
 
 ul, figcaption {
-  color: #A50104;
+  color: violet;
 }
 
 /* Intro page image styling */
