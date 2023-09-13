@@ -9,9 +9,13 @@ body, figure {
   align-items: center;
 }
 
+/* The black box around the main content, header, and footer. */
+
 header, main, footer {
   background-color: black;
   opacity: 0.9;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 /* Contract page text styling */
@@ -19,11 +23,11 @@ header, main, footer {
 main p {
   text-align: left;
   color: violet;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 ul, figcaption {
   color: violet;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Intro page image styling */
@@ -39,7 +43,7 @@ ul, figcaption {
 /* Heading color and font type below */
 
 h1, h2, p {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: whitesmoke;
     text-align: center;
   }
