@@ -72,20 +72,15 @@ a, nav {
     align-content: center;
 }
 
-a {
+a, a:visited {
     color: violet;
     text-decoration: none;
 }
   
-  a:visited {
-    color: white;
-    text-decoration: none;
-}
-  
-  a:hover {
+a:hover {
     color: #22c122;
 }
   
-  a:active {
+a:active {
     color: blue;
 }
