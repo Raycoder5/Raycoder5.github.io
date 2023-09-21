@@ -16,7 +16,7 @@ body, figure {
 /* Change the text color on the .tables class violet */
 
 .tables {
-  color: violet;
+  color: goldenrod;
 }
 
 /* The black box around the main content, header, and footer. */
@@ -32,11 +32,11 @@ header, main, footer {
 
 main p {
   text-align: left;
-  color: violet;
+  color: goldenrod;
 }
 
 ul, figcaption, ol {
-  color: violet;
+  color: goldenrod;
 }
 
 /* Intro page image styling */
