@@ -11,6 +11,35 @@
             <div data-include="components/header.html"></div>
             <main>
                 <h2>Activity #3 - HTML Form</h2>
+                <form method="post" action="#">
+                    <fieldset>
+                        <label for="first-last-name"> Enter your first and last name:
+                            <input id="first-last-name" name="first-last-name" type="text" required/></label>
+                        <label for="phone-number"> Enter your phone number:
+                            <input id="phone-number" name="phone-number" type="text"/></label>
+                        <label for="user-email"> Enter your email:
+                            <input id="user-email" name="user-email" type="email" required/></label>
+                    </fieldset>
+                    <fieldset>
+                        <label>How many episodes of One Piece have you watched?</label>
+                        <label for="zero-range"> 0 episodes
+                            <input id="zero-range" name="zero-range" type="checkbox" required/></label>
+                        <label for="hundred-range"> 100 to 500 episodes
+                            <input id="hundred-range" name="hundred-range" type="checkbox" required/></label>
+                        <label for="hundred-thousand-range"> 500 to 1,000 episodes
+                            <input id="hundred-thousand-range" name="hundred-thousand-range" type="checkbox" required/></label>
+                    </fieldset>
+                    <fieldset>
+                        <label>What pirate crew would you be on?</label>
+                        <label for="big-mom"> The Big Mom pirates
+                            <input id="big-mom" name="big-mom" type="radio" required/></label>
+                        <label for="straw-hat"> The Straw Hat pirates
+                            <input id="straw-hat" name="straw-hat" type="radio" required/></label>
+                        <label for="corazon"> The Corazon pirates
+                            <input id="corazon" name="corazon" type="radio" required/></label>
+                        <!--Put a dropdown menu here.-->
+                    </fieldset>
+                </form>
             </main>
             <div data-include="components/footer.html"></div>
         </div>

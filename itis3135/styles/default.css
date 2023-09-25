@@ -53,8 +53,16 @@ main p {
   color: goldenrod;
 }
 
-ul, figcaption, ol {
+ul, figcaption, ol, label {
   color: goldenrod;
+}
+
+/* Fieldset formatting below */
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
 }
 
 /* Intro page image styling */
