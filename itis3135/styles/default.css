@@ -3,7 +3,9 @@
 }
 
 @media (min-width: 576px) {
-
+  img {
+    display: block;
+  }
 }
 
 body {
