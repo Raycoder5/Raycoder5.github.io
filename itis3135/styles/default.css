@@ -61,6 +61,7 @@ main p {
 
 ul, figcaption, ol, label {
   color: goldenrod;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Form formatting below */
@@ -112,7 +113,6 @@ input {
 /* Heading color and font type below */
 
 h1, h2, h3, p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: whitesmoke;
     text-align: center;
   }
