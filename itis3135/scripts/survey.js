@@ -44,5 +44,5 @@ function newClass() {
 
 // Function that submits and shows the user input.
 function submitAndShow() {
-
+    //Pick up here
 }
