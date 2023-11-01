@@ -10,7 +10,43 @@
         <div class="content-box">
             <div data-include="components/header.html"></div>
             <main>
-                <!-- Pick up here! -->
+                <h2>BYO Intro</h2>
+                <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+                <form action="#" id="userIntro" onsubmit="formValidation();">
+                    <fieldset>
+                        <label for="name"> What is your name?
+                            <input type="text" id="name"></label>
+                        <br>
+                        <label for="mascot"> What is your mascot?
+                            <input type="text" id="mascot"></label>
+                    </fieldset>
+                    <label for="userImage"> Intro image <em>(.jpg or .png only)</em>
+                        <input type="file" name="userImage" id="userImage" accept=".jpg, .png"></label>
+                    <fieldset>
+                        <label for="imageCaption"> Image caption
+                            <input type="text" id="imageCaption"></label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="personalBackground"> Personal Background</label>
+                        <br>
+                        <textarea id="personalBackground" cols="30" rows="5">I was born in Kingston, Jamaica but I was mostly raised in the United States. I lived in the Bronx in New York city from kindergarten to 3rd grade and then I moved to Charlotte, North Carolina when I was in the 4th grade and I have lived here ever since. I really like Charlotte because it is a major city but does not feel overwhelming like New York city.</textarea>
+                    </fieldset>
+                    <fieldset>
+                        <label for="proBackground"> Professional Background</label>
+                        <br>
+                        <textarea id="proBackground" cols="30" rows="5">My very first job was a lifeguard job at a local pool in 2021. I quickly got promoted to lifeguard manager and finished out the summer in that position. I then got an internship the next summer in 2022 as an installation technician installing smart boards at local high schools in the Charlotte Mecklenburg area. Finally, I recently completed an internship with Fifth Third bank in Cincinnati, Ohio and I really enjoyed my time there. I will use that experience to try and get an internship in Charlotte next summer in 2024.</textarea>
+                    </fieldset>
+                    <fieldset>
+                        <label for="academicBackground"> Academic Background</label>
+                        <br>
+                        <textarea id="academicBackground" cols="30" rows="5">I went to a special high school called a middle college that allowed me to start college halfway through my high school career. So by the time I graduated from high school, I was already halfway through college. I then got accepted to UNC Charlotte and started attending in the fall semester of 2022.</textarea>
+                    </fieldset>
+                    <fieldset>
+                        <label for="classBackground"> Background in Web Development</label>
+                        <br>
+                        <textarea id="classBackground" cols="30" rows="5">I have taken 1 class in high school that was related to website design and development and I actually liked it! So ever since I have been wanting to dive back into the field to see what it would be like to do it more seriously and even professionally at some point in the future. I am really looking forward to learning more about HTML, CSS, and Javascript in this class!</textarea>
+                    </fieldset>
+                </form>
             </main>
             <div data-include="components/footer.html"></div>
         </div>
