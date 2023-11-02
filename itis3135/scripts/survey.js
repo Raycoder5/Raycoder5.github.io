@@ -1,26 +1,3 @@
-// Function to validate that all the fields are not empty.
-function formValidation() {
-    const name = document.getElementById("name").value;
-    const mascot = document.getElementById("mascot").value;
-    const imageCaption = document.getElementById("imageCaption").value;
-    const personalBackground = document.getElementById("personalBackground").value;
-    const proBackground = document.getElementById("proBackground").value;
-    const academicBackground = document.getElementById("academicBackground").value;
-    const classBackground = document.getElementById("classBackground").value;
-    const primaryComputer = document.getElementById("primaryComputer").value;
-    const funny = document.getElementById("funny").value;
-    const more = document.getElementById("more").value;
-    const termsAndConditions = document.getElementById("termsAndConditions");
-
-    if (
-        name === "" || mascot === "" || imageCaption === "" || personalBackground === "" || proBackground === "" || academicBackground === "" || classBackground === "" || primaryComputer === "" || funny === "" || more === "" || termsAndConditions === "" || !termsAndConditions.checked
-    ) {
-        alert("Fill out all fields and check the box please.");
-    }
-    
-    submitAndShow();
-}
-
 // Function that adds a course option
 function newClass() {
     const userCourses = document.getElementById("newCourses");
@@ -48,6 +25,7 @@ function loadImage() {
         alert("No image selected!");
     }
     const imageUrl = URL.createObjectURL(imageUpload);
+    console.log(imageUrl);
     return imageUrl;
 }
 
@@ -73,51 +51,25 @@ function showCourses() {
 function submitAndShow() {
     const name = document.getElementById("name").value;
     const mascot = document.getElementById("mascot").value;
-    const imageCaption = document.getElementById("imageCaption").value;
-    const personalBackground = document.getElementById("personalBackground").value;
-    const proBackground = document.getElementById("proBackground").value;
-    const academicBackground = document.getElementById("academicBackground").value;
-    const classBackground = document.getElementById("classBackground").value;
-    const primaryComputer = document.getElementById("primaryComputer").value;
-    const funny = document.getElementById("funny").value;
-    const more = document.getElementById("more").value;
-    const defaultForm = document.getElementById("introForm").innerHTML;
-    const image = loadImage();
-    const courses = showCourses();
+    //const imageCaption = document.getElementById("imageCaption").value;
+    //const personalBackground = document.getElementById("personalBackground").value;
+    //const proBackground = document.getElementById("proBackground").value;
+    //const academicBackground = document.getElementById("academicBackground").value;
+    //const classBackground = document.getElementById("classBackground").value;
+    //const primaryComputer = document.getElementById("primaryComputer").value;
+    //const funny = document.getElementById("funny").value;
+    //const more = document.getElementById("more").value;
+    //const defaultForm = document.getElementById("introForm").innerHTML;
+    //const image = loadImage();
+    //let courses = showCourses();
 
-    if (image) {
-        const userForm = document.getElementById("userIntro");
+    let mainContent = document.createElement("main");
 
-        userForm.innerHTML = `
-            <h2>${name} : Introduction</h2>
-            <figure>
-                <div class="gallery"><img src="${image}" alt="user image"></div>
-                <figcaption><em>${imageCaption}</em></figcaption>
-            </figure>
-            <ul>
-                <li><b>Personal Background:</b>  ${personalBackground}</li>
-                <li><b>Professional Background:</b> ${proBackground}</li>
-                <li><b>Academic Background:</b> ${academicBackground}</li>
-                <li><b>Background in this Subject:</b> ${classBackground}</li>
-                <li><b>Primary Computer Platform:</b> ${primaryComputer}</li>
-                <li>
-                    <b>Courses I'm Taking & Why:</b>
-                    <ul>
-                        <li>${courses}</li>
-                    </ul>
-                </li>
-                <li><b>Funny/Interesting Item to Remember me by:</b> ${funny}</li>
-                <li><b>I'd also like to Share:</b> ${more}</li>
-            </ul>
-        `;
+    let headingTwo = document.createElement("h2");
 
-        const reset = document.createElement("button");
-        reset.textContent = "Make another form";
-        reset.addEventListener("click", function () {
-            userForm.reset();
-            userForm.innerHTML = defaultForm;
-        });
+    headingTwo.innerText = name + "★" + mascot;
 
-        userForm.appendChild(reset);
-    }
+    mainContent.appendChild()
+
+    document.getElementById("userIntro").replaceWith(mainContent);
 }
