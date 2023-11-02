@@ -17,9 +17,8 @@ function formValidation() {
     ) {
         alert("Fill out all fields and check the box please.");
     }
-    else {
-        submit();
-    }
+    
+    submitAndShow();
 }
 
 // Function that adds a course option
@@ -42,7 +41,83 @@ function newClass() {
     userCourses.appendChild(deleteCourse);
 }
 
+// Function that takes the first image that the user uploads.
+function loadImage() { 
+    const imageUpload = document.getElementById("userImage").files[0];
+    if (!imageUpload) {
+        alert("No image selected!");
+    }
+    const imageUrl = URL.createObjectURL(imageUpload);
+    return imageUrl;
+}
+
+// Function that shows the courses the user submits.
+function showCourses() {
+    const courseList = document.createElement("ul");
+    const newCourses = document.getElementById("newCourses");
+
+    for (let i = 0; i < newCourses.children.length; i++) {
+        const after = newCourses.children[i];
+
+        if (next.nodeName === "INPUT" && next.value.trim() !== "") {
+            const addCourse = document.createElement("li");
+            addCourse.innerText = after.value;
+            courseList.appendChild(addCourse);
+        }
+    }
+    return addCourse;
+}
+
+
 // Function that submits and shows the user input.
 function submitAndShow() {
-    //Pick up here
+    const name = document.getElementById("name").value;
+    const mascot = document.getElementById("mascot").value;
+    const imageCaption = document.getElementById("imageCaption").value;
+    const personalBackground = document.getElementById("personalBackground").value;
+    const proBackground = document.getElementById("proBackground").value;
+    const academicBackground = document.getElementById("academicBackground").value;
+    const classBackground = document.getElementById("classBackground").value;
+    const primaryComputer = document.getElementById("primaryComputer").value;
+    const funny = document.getElementById("funny").value;
+    const more = document.getElementById("more").value;
+    const defaultForm = document.getElementById("introForm").innerHTML;
+    const image = loadImage();
+    const courses = showCourses();
+
+    if (image) {
+        const userForm = document.getElementById("userIntro");
+
+        userForm.innerHTML = `
+            <h2>${name} : Introduction</h2>
+            <figure>
+                <div class="gallery"><img src="${image}" alt="user image"></div>
+                <figcaption><em>${imageCaption}</em></figcaption>
+            </figure>
+            <ul>
+                <li><b>Personal Background:</b>  ${personalBackground}</li>
+                <li><b>Professional Background:</b> ${proBackground}</li>
+                <li><b>Academic Background:</b> ${academicBackground}</li>
+                <li><b>Background in this Subject:</b> ${classBackground}</li>
+                <li><b>Primary Computer Platform:</b> ${primaryComputer}</li>
+                <li>
+                    <b>Courses I'm Taking & Why:</b>
+                    <ul>
+                        <li>${courses}</li>
+                    </ul>
+                </li>
+                <li><b>Funny/Interesting Item to Remember me by:</b> ${funny}</li>
+                <li><b>I'd also like to Share:</b> ${more}</li>
+            </ul>
+        `;
+
+        const reset = document.createElement("button");
+        reset.textContent = "Make another form";
+        reset.addEventListener("click", function () {
+            userForm.reset();
+            userForm.innerHTML = defaultForm;
+        });
+
+        userForm.appendChild(reset);
+    }
 }
