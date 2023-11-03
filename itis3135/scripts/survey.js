@@ -47,10 +47,10 @@ function showCourses() {
 }
 
 
-// Function that submits and shows the user input.
+// Function that shows the user input.
 function submitAndShow() {
-    const name = document.getElementById("name").value;
-    const mascot = document.getElementById("mascot").value;
+    //const name = document.getElementById("name").value;
+    //const mascot = document.getElementById("mascot").value;
     //const imageCaption = document.getElementById("imageCaption").value;
     //const personalBackground = document.getElementById("personalBackground").value;
     //const proBackground = document.getElementById("proBackground").value;
@@ -63,13 +63,5 @@ function submitAndShow() {
     //const image = loadImage();
     //let courses = showCourses();
 
-    let mainContent = document.createElement("main");
-
-    let headingTwo = document.createElement("h2");
-
-    headingTwo.innerText = name + "★" + mascot;
-
-    mainContent.appendChild()
-
-    document.getElementById("userIntro").replaceWith(mainContent);
+    // Get the TA to help you with this!
 }
