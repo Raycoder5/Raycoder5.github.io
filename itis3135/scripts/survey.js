@@ -61,9 +61,6 @@ function submitAndShow() {
     const funny = document.getElementById("funny").value;
     const more = document.getElementById("more").value;
     const image = loadImage();
-    
-    const courses = showCourses();
-    const coursesText = courses.textContent;
 
     // Add the user's info to the page
     document.getElementById("userOutput").innerHTML = `
@@ -81,7 +78,7 @@ function submitAndShow() {
         <li>
             <b>Courses I'm Taking & Why:</b>
             <ul>
-                // I do not know how to add the classes in.
+                
             </ul>
         </li>
         <li><b>Funny/Interesting Item to Remember me by:</b> ${funny}</li>
