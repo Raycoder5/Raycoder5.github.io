@@ -49,19 +49,49 @@ function showCourses() {
 
 // Function that shows the user input.
 function submitAndShow() {
-    //const name = document.getElementById("name").value;
-    //const mascot = document.getElementById("mascot").value;
-    //const imageCaption = document.getElementById("imageCaption").value;
-    //const personalBackground = document.getElementById("personalBackground").value;
-    //const proBackground = document.getElementById("proBackground").value;
-    //const academicBackground = document.getElementById("academicBackground").value;
-    //const classBackground = document.getElementById("classBackground").value;
-    //const primaryComputer = document.getElementById("primaryComputer").value;
-    //const funny = document.getElementById("funny").value;
-    //const more = document.getElementById("more").value;
-    //const defaultForm = document.getElementById("introForm").innerHTML;
-    //const image = loadImage();
-    //let courses = showCourses();
 
-    // Get the TA to help you with this!
+    const name = document.getElementById("name").value;
+    const mascot = document.getElementById("mascot").value;
+    const imageCaption = document.getElementById("imageCaption").value;
+    const personalBackground = document.getElementById("personalBackground").value;
+    const proBackground = document.getElementById("proBackground").value;
+    const academicBackground = document.getElementById("academicBackground").value;
+    const classBackground = document.getElementById("classBackground").value;
+    const primaryComputer = document.getElementById("primaryComputer").value;
+    const funny = document.getElementById("funny").value;
+    const more = document.getElementById("more").value;
+    const image = loadImage();
+    
+    const courses = showCourses();
+    const coursesText = courses.textContent;
+
+    // Add the user's info to the page
+    document.getElementById("userOutput").innerHTML = `
+    <h2>${name}'s || ${mascot}</h2>
+    <figure>
+        <div class="gallery"><img src="${image}" alt="User uploaded image"></div>
+        <figcaption><em>${imageCaption}</em></figcaption>
+    </figure>
+    <ul>
+        <li><b>Personal Background:</b>  ${personalBackground}</li>
+        <li><b>Professional Background:</b> ${proBackground}</li>
+        <li><b>Academic Background:</b> ${academicBackground}</li>
+        <li><b>Background in this Subject:</b> ${classBackground}</li>
+        <li><b>Primary Computer Platform:</b> ${primaryComputer}</li>
+        <li>
+            <b>Courses I'm Taking & Why:</b>
+            <ul>
+                // I do not know how to add the classes in.
+            </ul>
+        </li>
+        <li><b>Funny/Interesting Item to Remember me by:</b> ${funny}</li>
+        <li><b>I'd also like to Share:</b> ${more}</li>
+    </ul>
+    <fieldset>
+        <a href="byo_intro.html">MAKE ANOTHER INTRO PAGE</a>
+    </fieldset>
+    `;
+
+    // Delete everything in the form element.
+    document.getElementById("userIntro").remove();
 }

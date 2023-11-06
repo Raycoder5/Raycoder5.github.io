@@ -11,11 +11,11 @@
             <div data-include="components/header.html"></div>
             <main>
                 <h2>BYO Intro</h2>
-                    <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
-                    <form id="userIntro" onsubmit="submitAndShow();">
+                    <form id="userIntro">
+                        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
                         <fieldset>
                             <label for="name"> What is your name?
-                                <input type="text" id="name" required value="Ramone Thompson">
+                                <input type="text" id="name" value="Ramone Thompson" required>
                             </label>
                             <br>
                             <label for="mascot"> What is your mascot?
@@ -71,9 +71,12 @@
                         </fieldset>
                         <input type="checkbox" id="termsAndConditions" required>
                         <label for="termsAndConditions">I understand that what is on this page is not password protected and I will not put anything here that I dont want publicly available.</label>
-                        <input type="submit" value="Submit">
+                        <input type="button" value="Submit" onclick="submitAndShow();">
                         <button type="reset">Reset form</button>
                     </form>
+                    <div id="userOutput">
+                        
+                    </div>
             </main>
             <div data-include="components/footer.html"></div>
         </div>
