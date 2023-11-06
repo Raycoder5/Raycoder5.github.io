@@ -11,7 +11,7 @@
             <div data-include="components/header.html"></div>
             <main>
                 <h2>BYO Intro</h2>
-                    <form id="userIntro">
+                    <form id="userIntro" onsubmit="submitAndShow();">
                         <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
                         <fieldset>
                             <label for="name"> What is your name?
@@ -19,7 +19,7 @@
                             </label>
                             <br>
                             <label for="mascot"> What is your mascot?
-                                <input type="text" id="mascot" required value="Roudy Tanuki">
+                                <input type="text" id="mascot" value="Roudy Tanuki" required>
                             </label>
                         </fieldset>
                         <label for="userImage"> Intro image <em>(.jpg or .png only)</em>
@@ -71,7 +71,7 @@
                         </fieldset>
                         <input type="checkbox" id="termsAndConditions" required>
                         <label for="termsAndConditions">I understand that what is on this page is not password protected and I will not put anything here that I dont want publicly available.</label>
-                        <input type="button" value="Submit" onclick="submitAndShow();">
+                        <input type="submit" value="Submit">
                         <button type="reset">Reset form</button>
                     </form>
                     <div id="userOutput">

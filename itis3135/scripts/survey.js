@@ -29,23 +29,6 @@ function loadImage() {
     return imageUrl;
 }
 
-// Function that shows the courses the user submits.
-function showCourses() {
-    const courseList = document.createElement("ul");
-    const newCourses = document.getElementById("newCourses");
-
-    for (let i = 0; i < newCourses.children.length; i++) {
-        const after = newCourses.children[i];
-
-        if (next.nodeName === "INPUT" && next.value.trim() !== "") {
-            const addCourse = document.createElement("li");
-            addCourse.innerText = after.value;
-            courseList.appendChild(addCourse);
-        }
-    }
-    return addCourse;
-}
-
 
 // Function that shows the user input.
 function submitAndShow() {

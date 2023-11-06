@@ -91,7 +91,7 @@ fieldset {
 
 /* Styling for the submit and reset button. */
 
-button, input[type="button"] {
+button, input[type="submit"] {
   display: block;
   margin: 40px auto;
   width: 40%;
