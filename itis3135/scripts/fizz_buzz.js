@@ -2,7 +2,7 @@
 const fizzBuzzContent = document.getElementById("fizzBuzzContent");
 
 // For loop that spits out the fizz, buzz, and bang.
-for (let i = 1; i <= 100; i++) {
+for (let i = 1; i <= 110; i++) {
     let str = "";
     if (i % 3 === 0) {
         str += "fizz";
