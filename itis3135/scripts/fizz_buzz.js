@@ -11,7 +11,7 @@ for (let i = 1; i <= 100; i++) {
         str += "buzz";
     }
     if (i % 7 === 0) {
-        str += "bang";
+        str += "BANG!";
     }
     if (str === "") {
         str = i;
