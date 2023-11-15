@@ -52,6 +52,20 @@ table tr:nth-child(1) {
   border-radius: 10px;
 }
 
+/* 1 The white box around the main calculator */
+.calculator-body {
+  background-color: azure;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* 2 The buttons background styling */
+.calculator-button {
+  background-color: purple;
+  margin: auto;
+}
+
 /* Contract page text styling */
 
 main p {
