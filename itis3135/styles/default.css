@@ -158,18 +158,24 @@ a:active {
     color: blue;
 }
 
-/* (calculator_fcc) The styling for the keys in the calculator */
+/* (calculator_fcc) The flex box styling for the keys in the calculator */
 .calculator-keys {
   display: grid;
   grid-gap: 1px;
   grid-template-columns: repeat(4, 1fr);
   background-color: purple;
+  padding: 20px;
 }
 
-/* (calculator_fcc) The styling for the display in the calculator */
+/* (calculator_fcc) The styling for the display in the calculator. */
 .calculator-display {
   display: flex;
   justify-content: right;
+  padding: 10px 15px;
   background-color: goldenrod;
-  padding-right: 15px;
+}
+
+/* (calculator_fcc) The styling for the individual keys on the calculator. */
+.calculator-keys button {
+  padding: 15px;
 }
