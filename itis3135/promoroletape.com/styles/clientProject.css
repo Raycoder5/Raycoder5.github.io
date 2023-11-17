@@ -21,7 +21,7 @@ h1, p {
     font-family: Georgia;
 }
 
-h2 {
+h2, h3 {
     color: var(--company-color-4);
     font-family: Georgia;
 }
@@ -60,7 +60,8 @@ a:hover {
 
 /* Below is the styling for the background of the page. */
 body {
-    background-color: var(--company-color-2);
+    background-color: var(--company-color-4);
+    padding: 20px;
 }
 
 /* Below is the styling for the footer links */
@@ -98,3 +99,14 @@ main h2 {
     text-align: center;
 }
 
+/* Making the pictures smaller on the services page. */
+.make-smaller {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+/* Making the pictures bigger on the gallery page. */
+.make-bigger {
+    max-width: 900px;
+    max-width: 900px;
+}
