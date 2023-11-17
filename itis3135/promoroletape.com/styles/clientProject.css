@@ -1,3 +1,4 @@
+/* All of the website colors */
 :root {
     --company-color-1: black;
     --company-color-2: #484848;
@@ -109,4 +110,9 @@ main h2 {
 .make-bigger {
     max-width: 900px;
     max-width: 900px;
+}
+
+/* Centers the text of any paragraph with this class */
+.center-text {
+    text-align: center;
 }
