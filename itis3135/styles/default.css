@@ -179,3 +179,9 @@ a:active {
 .calculator-keys button {
   padding: 15px;
 }
+
+/* review1.html and review2.html image styling */
+.reviewImage {
+  max-width: 400px;
+  max-height: 400px;
+}
