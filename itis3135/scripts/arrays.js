@@ -62,6 +62,7 @@ function displaySalary() {
         table += currentRow;
     }
 
+    // Display the table with the variable number of rows.
     tableBody.innerHTML = `
     <table id="results_table">
         <tr>
