@@ -185,3 +185,8 @@ a:active {
   max-width: 400px;
   max-height: 400px;
 }
+
+/* (arrays.html) Making the legend visible on my black background. */
+.fieldLegend {
+  color: goldenrod;
+}
