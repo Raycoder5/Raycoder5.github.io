@@ -5,6 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Related sites</title>
         <link rel="stylesheet" href="styles/clientProject.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script>
+            $( function() {
+              $( "#accordion" ).accordion();
+            } );
+        </script>
     </head>
     <body>
         <div class="content-box">
@@ -21,15 +28,20 @@
             </header>
             <main>
                 <h2>Other services</h2>
-                <p class="center-text">Roletape also offers other services like Launchpad Libray and Pocket Producers</p>
-
-                <h2>Launchpad Libray</h2>
-                <a href="https://launchpadlibrary.com/"><img src="images/Launchpad_Library_Icon.jpg" alt="Launchpad Library Icon"></a>
-                <p class="center-text">Launchpad Libray is a service that provides a library of E-books curated by Roletape.</p>
-
-                <h2>Pocket Producers</h2>
-                <a href="https://pocketproducers.com/"><img src="images/Pocket_Producers_Logo.jpg" alt="Pocket Producers Icon"></a>
-                <p class="center-text">Pocket Producers is a service creatives can use to meet other creatives in their area.</p>
+                <p class="center-text">Roletape also offers other services like <a href="https://launchpadlibrary.com/">Launchpad Libray</a> and <a href="https://pocketproducers.com/">Pocket Producers</a>.</p>
+                <p class="center-text">Click on the titles of the services below to get more info!</p>
+                <!--jQuery widget and plugin-->
+                <div id="accordion">
+                    <h3>Launchpad Libray</h3>
+                    <div>
+                        <p>Launchpad Libray is a service that provides a library of E-books curated by Roletape.</p>
+                    </div>
+                    <h3>Pocket Producers</h3>
+                    <div>
+                        <p>Pocket Producers is a service creatives can use to meet other creatives in their area.</p>
+                    </div>
+                </div>
+                
             </main>
             <footer>
                 <p>
