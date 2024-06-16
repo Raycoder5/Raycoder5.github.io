@@ -5,7 +5,7 @@
 
 /* Website background color. */
 body {
-    color: #3eb650;
+    background-color: #3eb650;
     padding: 20px;
 }
 
@@ -13,4 +13,24 @@ body {
 h1, h2, h3, p {
     color: whitesmoke;
     text-align: center;
+}
+
+/* Link color controls below */
+
+a, nav {
+    text-align: center;
+    align-content: center;
+}
+
+a, a:visited {
+    color: #292930;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: #fcc133;
+}
+  
+a:active {
+    color: blue;
 }
