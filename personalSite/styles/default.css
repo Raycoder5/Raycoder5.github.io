@@ -38,9 +38,11 @@ a:active {
 /* Styling for the header box */
 
 .header-box {
-    background-color: bisque;
+    background-color: rgb(58, 120, 78);
     margin: auto;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
     border-radius: 10px;
 }
