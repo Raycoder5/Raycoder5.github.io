@@ -6,13 +6,17 @@
 /* Website background color. */
 body {
     background-color: #3eb650;
-    padding: 20px;
+    padding: 40px;
 }
 
 /* All the below tags will be centered and the color white. */
 h1, h2, h3, p {
     color: whitesmoke;
     text-align: center;
+}
+
+main p {
+    text-align: left;
 }
 
 /* Link color controls below */
@@ -46,5 +50,3 @@ a:active {
     padding-bottom: 10px;
     border-radius: 10px;
 }
-
-/* */
